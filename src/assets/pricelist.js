@@ -1,0 +1,107 @@
+const PriceList = [
+
+   { itemNum: '+2019601', description: 'REDI-LOCK IMPRESSION TRAYS PEDO SMALL LOWER-RED 50PK', retail: 50, qtyPerPack: 50, maxDiscount: 0.4 },
+
+   { itemNum: '+2019602', description: 'REDI-LOCK IMPRESSION TRAYS PEDO SMALL UPPER-RED 50PK', retail: 50, qtyPerPack: 50, maxDiscount: 0.4 },
+
+   { itemNum: '05-3', description: '2nd Bicuspid Band (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '0533-3', description: '2nd Bicuspid Band / Lug Lingual & Buccal (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '06E-20', description: 'Epic 1st Molar Etched Band (20)', retail: 50, qtyPerPack: 20, maxDiscount: 0.6 },
+
+   { itemNum: '06E-3', description: 'Epic 1st Molar Etched Band (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '07E-20', description: 'Epic 2nd Molar Etched Band (20)', retail: 50, qtyPerPack: 20, maxDiscount: 0.6 },
+
+   { itemNum: '07E-3', description: 'Epic 2nd Molar Etched Band (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '0833E-3', description: 'Molar Band / Lug Lingual & Buccal Etched', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '08E-20', description: 'Tempra 1st Molar Etched Band (20)', retail: 50, qtyPerPack: 20, maxDiscount: 0.6 },
+
+   { itemNum: '08E-3', description: 'Tempra 1st Molar Etched (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '1.5MM-CG', description: '1.5mm C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '10-3', description: '1st Premolar Band (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '1033-3', description: '1st Premolar Band / Lug Lingual & Buccal (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '11-3', description: 'Canine Band (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '1133-3', description: 'Canine Band / Lug Lingual & Buccal (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '12-3', description: 'Lateral Band (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '1233-3', description: 'Lateral Band / Lug Lingual & Buccal (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '13-3', description: 'Central Band (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '1333-3', description: 'Central Band / Lug Lingual & Buccal (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '14-3', description: 'Incisor Band (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '1433-3', description: 'Incisor Band / Lug Lingual & Buccal (3)', retail: 50, qtyPerPack: 3, maxDiscount: 0.6 },
+
+   { itemNum: '16-6W-1000', description: '16 x 6 Wire (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.55 },
+
+   { itemNum: '16-6W-100', description: '16 x 6 Wire (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.55 },
+
+   { itemNum: '16X22-CG', description: '16 X 22 C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '16X25-CG', description: '16 X 25 C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '17X25-CG', description: '17 X 25 C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '18X18-CG', description: '18 X 18 C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '18X25-CG', description: '18 X 25 C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '19X25-CG', description: '19 X 25 C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '20-6W-1000', description: '20 x 6 Wire (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.55 },
+
+   { itemNum: '20-6W-100', description: '20 x 6 Wire (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.55 },
+
+   { itemNum: '21X25-CG', description: '21 X 25 C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '22X28-CG', description: '22 X 28 C Guage', retail: 87.2, qtyPerPack: 1, maxDiscount: 0.55 },
+
+   { itemNum: '24-6W-1000', description: '24 x 6 Wire (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.55 },
+
+   { itemNum: '24-6W-100', description: '24 x 6 Wire (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.55 },
+
+   { itemNum: '3D-LB-LOGO', description: '3D Lingual Button Logo', retail: 50, qtyPerPack: 10, maxDiscount: 0.4 },
+
+   { itemNum: 'AEO-100', description: 'AEO Elastic (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.4 },
+
+   { itemNum: 'AEO-1000', description: 'AEO Elastic (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.4 },
+
+   { itemNum: 'AG-100', description: 'Alphabet Gold (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.4 },
+
+   { itemNum: 'AG-1000', description: 'Alphabet Gold (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.4 },
+
+   { itemNum: 'AH-100', description: 'Alphabet Hot (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.4 },
+
+   { itemNum: 'AH-1000', description: 'Alphabet Hot (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.4 },
+
+   { itemNum: 'AN-100', description: 'Alphabet Neon (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.4 },
+
+   { itemNum: 'AN-1000', description: 'Alphabet Neon (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.4 },
+
+   { itemNum: 'AP-100', description: 'Alphabet Pastel (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.4 },
+
+   { itemNum: 'AP-1000', description: 'Alphabet Pastel (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.4 },
+
+   { itemNum: 'AR-100', description: 'Alphabet Rainbow (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.4 },
+
+   { itemNum: 'AR-1000', description: 'Alphabet Rainbow (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.4 },
+
+   { itemNum: 'AS-100', description: 'Alphabet Sparkle (100)', retail: 50, qtyPerPack: 100, maxDiscount: 0.4 },
+
+   { itemNum: 'AS-1000', description: 'Alphabet Sparkle (1000)', retail: 50, qtyPerPack: 1000, maxDiscount: 0.4 }
+
+ ];
+
+ export default PriceList;
