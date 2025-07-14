@@ -4,7 +4,6 @@ import './App.css'
 function App() {
   return (
     <>
-      <div>HSO ORDER FORM</div>
       <FullApp />
     </>
   )
